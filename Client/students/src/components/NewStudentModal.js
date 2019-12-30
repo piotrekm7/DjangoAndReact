@@ -16,17 +16,19 @@ class NewStudentModal extends Component {
 
     render() {
         const create = this.props.create;
-        let title, buttonText;
+        let title, buttonText, button_color;
         if (create) {
             title = "Creating New Student";
-            buttonText = "Edit";
+            buttonText = "Create New";
+            button_color = "primary";
         } else {
             title = "Editing Student";
-            buttonText = "Create New";
+            buttonText = "Edit";
+            button_color = "secondary";
         }
 
-        const button = (<Button color="primary" className="float-right" onClick={this.toggle}
-                                style={{minWidth: "200px"}}>{buttonText}</Button>);
+        const button = (
+            <Button color={button_color} className="float-right" onClick={this.toggle}>{buttonText}</Button>);
 
         return (
             <Fragment>
@@ -34,8 +36,8 @@ class NewStudentModal extends Component {
                 <Modal isOpen={this.state.modal} toggle={this.toggle}>
                     <ModalHeader toggle={this.toggle}>{title}</ModalHeader>
                     <ModalBody>
-                        <NewStudentForm resetState={this.props.resetState} toggle={this.toggle}
-                                        student={this.props.student}/>
+                        <NewStudentForm resetState={this.props.resetState} student={this.props.student}
+                                        toggle={this.toggle}/>
                     </ModalBody>
                 </Modal>
             </Fragment>

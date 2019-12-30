@@ -1,5 +1,7 @@
 import React, {Component, Fragment} from "react";
-import {Modal, ModalHeader, Button, ModalFooter} from "reactstrap"
+import {Modal, ModalHeader, Button, ModalFooter} from "reactstrap";
+import axios from "axios";
+import {API_URL} from "../constants";
 
 
 class ConfirmRemovalModal extends Component{
@@ -14,7 +16,10 @@ class ConfirmRemovalModal extends Component{
     };
 
     deleteStudent = id => {
-        // api call
+        axios.delete(API_URL + id + '/').then(() => {
+            this.props.resetState();
+            this.toggle();
+        });
     };
 
     render() {

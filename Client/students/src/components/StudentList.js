@@ -24,7 +24,7 @@ class StudentList extends Component {
                         <td>{student.email}</td>
                         <td>{student.document}</td>
                         <td>{student.phone}</td>
-                        <td>{student.registrationDate}</td>
+                        <td>{student.registration_date}</td>
                         <td align="center">
                             <NewStudentModal create={false} student={student} resetState={this.props.resetState}/>
                             <ConfirmRemovalModal id={student.id} resetState={this.props.resetState}/>
