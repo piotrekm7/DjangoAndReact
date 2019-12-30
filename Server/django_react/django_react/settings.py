@@ -141,7 +141,6 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = True
 
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_PAGINATION_CLASS': 'django_react.pagination_settings.Pagination',
     'PAGE_SIZE': 8,
-    'PAGINATE_BY_PARAM': 'page_size'
 }
