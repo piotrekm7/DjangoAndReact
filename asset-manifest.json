@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/DjangoAndReact/static/css/main.d1b05096.chunk.css",
+    "main.js": "/DjangoAndReact/static/js/main.12acad47.chunk.js",
+    "main.js.map": "/DjangoAndReact/static/js/main.12acad47.chunk.js.map",
+    "runtime-main.js": "/DjangoAndReact/static/js/runtime-main.fb6a7a19.js",
+    "runtime-main.js.map": "/DjangoAndReact/static/js/runtime-main.fb6a7a19.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/DjangoAndReact/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.2ba2d290.chunk.js": "/DjangoAndReact/static/js/2.2ba2d290.chunk.js",
+    "static/js/2.2ba2d290.chunk.js.map": "/DjangoAndReact/static/js/2.2ba2d290.chunk.js.map",
+    "index.html": "/DjangoAndReact/index.html",
+    "precache-manifest.ffbbdbd07d1fae3f0bb18052437fd887.js": "/DjangoAndReact/precache-manifest.ffbbdbd07d1fae3f0bb18052437fd887.js",
+    "service-worker.js": "/DjangoAndReact/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/DjangoAndReact/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.d1b05096.chunk.css.map": "/DjangoAndReact/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.2ba2d290.chunk.js.LICENSE": "/DjangoAndReact/static/js/2.2ba2d290.chunk.js.LICENSE",
+    "static/media/logo.svg": "/DjangoAndReact/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb6a7a19.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.2ba2d290.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.12acad47.chunk.js"
+  ]
+}
