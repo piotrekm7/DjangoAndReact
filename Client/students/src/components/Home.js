@@ -4,18 +4,24 @@ import StudentList from "./StudentList";
 import NewStudentModal from "./NewStudentModal";
 import axios from "axios"
 import {API_URL} from "../constants";
+import PaginationBar from "./Pagination";
 
 class Home extends Component {
     state = {
-        students: []
+        students: [],
+        pages: 0,
+        activePage: 1,
     };
 
     componentDidMount() {
         this.resetState();
     }
 
-    getStudents = () => {
-        axios.get(API_URL).then(res => this.setState({students: res.data})).catch((error) => {
+    getStudents = (page=1) => {
+        axios.get(API_URL + '?page='+page).then(res => {
+            this.setState({students: res.data.results});
+            this.setState({pages: res.data.total_pages})
+        }).catch((error) => {
             alert("There is the problem with connecting to the server, please contact with project administrator.");
             console.log(error.config);
         });
@@ -23,6 +29,11 @@ class Home extends Component {
 
     resetState = () => {
         this.getStudents();
+    };
+
+    changePage = (page) => {
+        this.setState({activePage: page});
+        this.getStudents(page);
     };
 
     render() {
@@ -38,6 +49,8 @@ class Home extends Component {
                         <NewStudentModal create={true} resetState={this.resetState}/>
                     </Col>
                 </Row>
+                <PaginationBar numberOfPages={this.state.pages} activePage={this.state.activePage}
+                               changePage={this.changePage}/>
             </Container>
         );
     }
