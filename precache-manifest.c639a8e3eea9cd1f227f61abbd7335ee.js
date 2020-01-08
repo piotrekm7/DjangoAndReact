@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fa4042b9c6a8030683998d5220b324d6",
+    "revision": "f2ffcd00182472052f0fcc11593d8b35",
     "url": "/DjangoAndReact/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DjangoAndReact/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "7b42bd9c3fa100d545d4",
+    "revision": "7a9aed5f6df661187b0a",
     "url": "/DjangoAndReact/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DjangoAndReact/static/js/2.2ba2d290.chunk.js.LICENSE"
   },
   {
-    "revision": "7b42bd9c3fa100d545d4",
-    "url": "/DjangoAndReact/static/js/main.12acad47.chunk.js"
+    "revision": "7a9aed5f6df661187b0a",
+    "url": "/DjangoAndReact/static/js/main.d97036f4.chunk.js"
   },
   {
     "revision": "d0a0c6a439fd7045a827",
