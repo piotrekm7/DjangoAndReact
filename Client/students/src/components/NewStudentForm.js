@@ -69,7 +69,7 @@ class NewStudentForm extends React.Component {
                     <Label>Phone:</Label>
                     <Input type="text" name="phone" onChange={this.onChange} value={this.state.phone} required/>
                 </FormGroup>
-                <Button type="submit">Submit</Button>
+                <Button type="submit" disabled="true">Submit</Button>
             </Form>
         );
     }
